@@ -1,5 +1,5 @@
 {
-    "packageId": "284ccb20a66f4",
+    "packageId": "a9466a05528c6",
     "name": "leak",
     "description": "leak package",
     "buttons": [
@@ -141,15 +141,50 @@
                                                         "id": "17ec317a9a2906",
                                                         "type": "node",
                                                         "parent": "d2c42daeddafd",
-                                                        "children": []
+                                                        "children": [],
+                                                        "rules": [
+                                                            {
+                                                                "type": "question",
+                                                                "id": "27bf441ed7aecc",
+                                                                "value": {
+                                                                    "values": [
+                                                                        "contact plumber"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
                                                     },
                                                     {
                                                         "id": "40a0acce0d775",
                                                         "type": "node",
                                                         "parent": "d2c42daeddafd",
-                                                        "children": []
+                                                        "children": [],
+                                                        "rules": [
+                                                            {
+                                                                "type": "question",
+                                                                "id": "27bf441ed7aecc",
+                                                                "value": {
+                                                                    "type": "options",
+                                                                    "values": [
+                                                                        "do not contact plumber"
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
                                                     }
                                                 ]
+                                            }
+                                        ],
+                                        "rules": [
+                                            {
+                                                "type": "question",
+                                                "id": "a5d8df5532fe9",
+                                                "value": {
+                                                    "type": "options",
+                                                    "values": [
+                                                        "communal area"
+                                                    ]
+                                                }
                                             }
                                         ]
                                     },
@@ -165,9 +200,32 @@
                                                 "nodeid": "d2c42daeddafd",
                                                 "children": []
                                             }
+                                        ],
+                                        "rules": [
+                                            {
+                                                "type": "question",
+                                                "id": "a5d8df5532fe9",
+                                                "value": {
+                                                    "values": [
+                                                        "an apartment"
+                                                    ]
+                                                }
+                                            }
                                         ]
                                     }
                                 ]
+                            }
+                        ],
+                        "rules": [
+                            {
+                                "type": "question",
+                                "id": "a5d8df5532fe9",
+                                "value": {
+                                    "type": "options",
+                                    "values": [
+                                        "communal area"
+                                    ]
+                                }
                             }
                         ]
                     },
@@ -182,6 +240,17 @@
                                 "parent": null,
                                 "nodeid": "b5866512fae7b8",
                                 "children": []
+                            }
+                        ],
+                        "rules": [
+                            {
+                                "type": "question",
+                                "id": "a5d8df5532fe9",
+                                "value": {
+                                    "values": [
+                                        "an apartment"
+                                    ]
+                                }
                             }
                         ]
                     }
@@ -224,7 +293,14 @@
                     "parameters": {
                         "dynamic": {
                             "recipients": [],
-                            "placeholders": []
+                            "placeholders": [
+                                {
+                                    "id": "b5866512fae7b8",
+                                    "qid": "b5866512fae7b8",
+                                    "key": "value",
+                                    "type": "question"
+                                }
+                            ]
                         },
                         "static": {
                             "email": {
@@ -232,7 +308,7 @@
                                 "body": ""
                             },
                             "sms": {
-                                "body": ""
+                                "body": "plumber - leak report: [b5866512fae7b8], wharfside, please contact "
                             },
                             "message": {
                                 "subject": "",
@@ -251,7 +327,14 @@
                     "parameters": {
                         "dynamic": {
                             "recipients": [],
-                            "placeholders": []
+                            "placeholders": [
+                                {
+                                    "id": "b5866512fae7b8",
+                                    "qid": "b5866512fae7b8",
+                                    "key": "value",
+                                    "type": "question"
+                                }
+                            ]
                         },
                         "static": {
                             "email": {
@@ -259,7 +342,7 @@
                                 "body": ""
                             },
                             "sms": {
-                                "body": ""
+                                "body": "management: leak report which has been marked [b5866512fae7b8]"
                             },
                             "message": {
                                 "subject": "",
