@@ -1,0 +1,276 @@
+{
+    "packageId": "284ccb20a66f4",
+    "name": "leak",
+    "description": "leak package",
+    "buttons": [
+        {
+            "buttonId": "27c68d478d6d5e",
+            "name": "leak report",
+            "description": "leak reporting",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "where is the leak coming from",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "an apartment",
+                            "communal area"
+                        ],
+                        "multiple": "single",
+                        "none": false,
+                        "description": "this button is used to log leak reports.  Details of leaks that are flagged as urgent will automatically be sent to maintenance and management"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "a5d8df5532fe9",
+                    "number": 1
+                },
+                {
+                    "question": "how urgent is the leak?",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "very urgent",
+                            "moderately urgent",
+                            "not urgent"
+                        ],
+                        "multiple": "single",
+                        "none": false,
+                        "description": "if the link is very urgent it means it is NOT under control and is causing damage.  If it is moderately urgent it is either not causing damage now, or is temporarily under control for the next few hours, not urgent means it can be kept under control for more than a few days"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "b5866512fae7b8",
+                    "number": 2
+                },
+                {
+                    "question": "which apartment is it coming from? (leave blank if you do not know)",
+                    "type": "keypad",
+                    "values": {
+                        "keys": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            0
+                        ],
+                        "delete": true,
+                        "max": 4
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "1dd995685c31f4",
+                    "number": 3
+                },
+                {
+                    "question": "further details",
+                    "type": "freetext",
+                    "values": {
+                        "format": "large",
+                        "description": "please any additional details that may help resolve the leak"
+                    },
+                    "validators": [],
+                    "compulsory": false,
+                    "questionId": "36e71ab3012458",
+                    "number": 4
+                },
+                {
+                    "question": "who shall we contact",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "contact plumber",
+                            "do not contact plumber"
+                        ],
+                        "multiple": "single",
+                        "none": false,
+                        "description": "would you like to send the leak report to a plumber (they will contact you to arrange a time to deal with the leak)"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "27bf441ed7aecc",
+                    "number": 5
+                },
+                {
+                    "question": "select any residents you would like to send the leak notification to (if any)",
+                    "type": "users",
+                    "values": {
+                        "features": [
+                            "message",
+                            "update"
+                        ]
+                    },
+                    "validators": [],
+                    "compulsory": false,
+                    "questionId": "16aa65e81ee12f",
+                    "number": 6
+                }
+            ],
+            "navigation": {
+                "id": "a5d8df5532fe9",
+                "type": "node",
+                "parent": null,
+                "children": [
+                    {
+                        "id": "b5866512fae7b8",
+                        "type": "node",
+                        "parent": "a5d8df5532fe9",
+                        "children": [
+                            {
+                                "id": "36e71ab3012458",
+                                "type": "node",
+                                "parent": "b5866512fae7b8",
+                                "children": [
+                                    {
+                                        "id": "27bf441ed7aecc",
+                                        "type": "node",
+                                        "parent": "36e71ab3012458",
+                                        "children": [
+                                            {
+                                                "id": "d2c42daeddafd",
+                                                "type": "node",
+                                                "parent": "27bf441ed7aecc",
+                                                "children": [
+                                                    {
+                                                        "id": "17ec317a9a2906",
+                                                        "type": "node",
+                                                        "parent": "d2c42daeddafd",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "id": "40a0acce0d775",
+                                                        "type": "node",
+                                                        "parent": "d2c42daeddafd",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "16aa65e81ee12f",
+                                        "type": "node",
+                                        "parent": "36e71ab3012458",
+                                        "children": [
+                                            {
+                                                "id": "27497c57a20c4",
+                                                "type": "subtree",
+                                                "parent": null,
+                                                "nodeid": "d2c42daeddafd",
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1dd995685c31f4",
+                        "type": "node",
+                        "parent": "a5d8df5532fe9",
+                        "children": [
+                            {
+                                "id": "2bf266117cd0ba",
+                                "type": "subtree",
+                                "parent": null,
+                                "nodeid": "b5866512fae7b8",
+                                "children": []
+                            }
+                        ]
+                    }
+                ],
+                "defaults": {}
+            },
+            "webhooks": [
+                {
+                    "name": "log endpoint",
+                    "type": "log",
+                    "url": "https://[buttonkit]/api/v1/datastore/log",
+                    "method": "POST",
+                    "contentType": "json",
+                    "parameters": {
+                        "dynamic": {
+                            "presser": [
+                                {
+                                    "id": "d2c42daeddafd_presser",
+                                    "type": "presser"
+                                }
+                            ],
+                            "pressed": [
+                                {
+                                    "id": "d2c42daeddafd_pressed",
+                                    "type": "pressed"
+                                }
+                            ]
+                        },
+                        "static": {
+                            "_datastorename": "leakreport"
+                        }
+                    },
+                    "webhookId": "d2c42daeddafd"
+                },
+                {
+                    "name": "notify endpoint",
+                    "type": "notify",
+                    "url": "https://[buttonkit]/api/v1/send",
+                    "method": "POST",
+                    "parameters": {
+                        "dynamic": {
+                            "recipients": [],
+                            "placeholders": []
+                        },
+                        "static": {
+                            "email": {
+                                "subject": "",
+                                "body": ""
+                            },
+                            "sms": {
+                                "body": ""
+                            },
+                            "message": {
+                                "subject": "",
+                                "body": ""
+                            },
+                            "recipients": []
+                        }
+                    },
+                    "webhookId": "17ec317a9a2906"
+                },
+                {
+                    "name": "notify endpoint",
+                    "type": "notify",
+                    "url": "https://[buttonkit]/api/v1/send",
+                    "method": "POST",
+                    "parameters": {
+                        "dynamic": {
+                            "recipients": [],
+                            "placeholders": []
+                        },
+                        "static": {
+                            "email": {
+                                "subject": "",
+                                "body": ""
+                            },
+                            "sms": {
+                                "body": ""
+                            },
+                            "message": {
+                                "subject": "",
+                                "body": ""
+                            },
+                            "recipients": []
+                        }
+                    },
+                    "webhookId": "40a0acce0d775"
+                }
+            ]
+        }
+    ]
+}
