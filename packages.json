@@ -1,5 +1,5 @@
 {
-    "packageId": "1fa6cb225f4116",
+    "packageId": "28c26ede84e3e2",
     "name": "leak",
     "description": "leak package",
     "buttons": [
@@ -378,6 +378,11 @@
                                     "id": "16aa65e81ee12f",
                                     "type": "question",
                                     "answer": {}
+                                },
+                                {
+                                    "id": "presser",
+                                    "type": "presser",
+                                    "answer": {}
                                 }
                             ],
                             "placeholders": [
@@ -390,11 +395,11 @@
                         },
                         "static": {
                             "email": {
-                                "subject": "",
-                                "body": ""
+                                "subject": "this is a test email",
+                                "body": "my test email!"
                             },
                             "sms": {
-                                "body": ""
+                                "body": "this is a test sms!!"
                             },
                             "message": {
                                 "subject": "This is a message",
