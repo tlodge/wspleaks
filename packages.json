@@ -1,5 +1,5 @@
 {
-    "packageId": "27b9b4332996b6",
+    "packageId": "1fa6cb225f4116",
     "name": "leak",
     "description": "leak package",
     "buttons": [
@@ -176,9 +176,11 @@
                                                         "id": "1723f7aa49f073",
                                                         "type": "node",
                                                         "parent": "d2c42daeddafd",
-                                                        "children": []
+                                                        "children": [],
+                                                        "rules": []
                                                     }
-                                                ]
+                                                ],
+                                                "rules": []
                                             }
                                         ],
                                         "rules": [
@@ -204,7 +206,8 @@
                                                 "type": "subtree",
                                                 "parent": null,
                                                 "nodeid": "d2c42daeddafd",
-                                                "children": []
+                                                "children": [],
+                                                "rules": []
                                             }
                                         ],
                                         "rules": [
@@ -219,7 +222,8 @@
                                             }
                                         ]
                                     }
-                                ]
+                                ],
+                                "rules": []
                             }
                         ],
                         "rules": [
@@ -245,7 +249,8 @@
                                 "type": "subtree",
                                 "parent": null,
                                 "nodeid": "b5866512fae7b8",
-                                "children": []
+                                "children": [],
+                                "rules": []
                             }
                         ],
                         "rules": [
@@ -368,8 +373,20 @@
                     "method": "POST",
                     "parameters": {
                         "dynamic": {
-                            "recipients": [],
-                            "placeholders": []
+                            "recipients": [
+                                {
+                                    "id": "16aa65e81ee12f",
+                                    "type": "question",
+                                    "answer": {}
+                                }
+                            ],
+                            "placeholders": [
+                                {
+                                    "id": "devpostcode",
+                                    "type": "development",
+                                    "key": "postcode"
+                                }
+                            ]
                         },
                         "static": {
                             "email": {
@@ -377,11 +394,11 @@
                                 "body": ""
                             },
                             "sms": {
-                                "body": "ok this is another notify!"
+                                "body": ""
                             },
                             "message": {
-                                "subject": "",
-                                "body": ""
+                                "subject": "This is a message",
+                                "body": "That will go to whichever users were chosen.  Boom!"
                             },
                             "recipients": []
                         }
