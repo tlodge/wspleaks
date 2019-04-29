@@ -1,5 +1,5 @@
 {
-    "packageId": "28c26ede84e3e2",
+    "packageId": "283d055711098c",
     "name": "leak",
     "description": "leak package",
     "buttons": [
@@ -305,7 +305,18 @@
                     "method": "POST",
                     "parameters": {
                         "dynamic": {
-                            "recipients": [],
+                            "recipients": [
+                                {
+                                    "id": "presser",
+                                    "type": "presser",
+                                    "answer": {}
+                                },
+                                {
+                                    "id": "16aa65e81ee12f",
+                                    "type": "question",
+                                    "answer": {}
+                                }
+                            ],
                             "placeholders": [
                                 {
                                     "id": "b5866512fae7b8",
@@ -317,15 +328,15 @@
                         },
                         "static": {
                             "email": {
-                                "subject": "",
-                                "body": ""
+                                "subject": "this is my email",
+                                "body": "And this is my message!"
                             },
                             "sms": {
                                 "body": "plumber - leak report: [b5866512fae7b8], wharfside, please contact "
                             },
                             "message": {
-                                "subject": "",
-                                "body": ""
+                                "subject": "hello",
+                                "body": "hello again!!"
                             },
                             "recipients": []
                         }
@@ -339,7 +350,18 @@
                     "method": "POST",
                     "parameters": {
                         "dynamic": {
-                            "recipients": [],
+                            "recipients": [
+                                {
+                                    "id": "16aa65e81ee12f",
+                                    "type": "question",
+                                    "answer": {}
+                                },
+                                {
+                                    "id": "presser",
+                                    "type": "presser",
+                                    "answer": {}
+                                }
+                            ],
                             "placeholders": [
                                 {
                                     "id": "b5866512fae7b8",
@@ -351,15 +373,15 @@
                         },
                         "static": {
                             "email": {
-                                "subject": "",
-                                "body": ""
+                                "subject": "this is for management",
+                                "body": "and this is a message!"
                             },
                             "sms": {
                                 "body": "management: leak report which has been marked [b5866512fae7b8]"
                             },
                             "message": {
-                                "subject": "",
-                                "body": ""
+                                "subject": "hello",
+                                "body": "hello again du du du du do do"
                             },
                             "recipients": []
                         }
