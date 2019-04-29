@@ -1,5 +1,5 @@
 {
-    "packageId": "a9466a05528c6",
+    "packageId": "27b9b4332996b6",
     "name": "leak",
     "description": "leak package",
     "buttons": [
@@ -171,6 +171,12 @@
                                                                 }
                                                             }
                                                         ]
+                                                    },
+                                                    {
+                                                        "id": "1723f7aa49f073",
+                                                        "type": "node",
+                                                        "parent": "d2c42daeddafd",
+                                                        "children": []
                                                     }
                                                 ]
                                             }
@@ -255,7 +261,9 @@
                         ]
                     }
                 ],
-                "defaults": {}
+                "defaults": {
+                    "d2c42daeddafd": "1723f7aa49f073"
+                }
             },
             "webhooks": [
                 {
@@ -352,6 +360,33 @@
                         }
                     },
                     "webhookId": "40a0acce0d775"
+                },
+                {
+                    "name": "notify endpoint",
+                    "type": "notify",
+                    "url": "https://[buttonkit]/api/v1/send",
+                    "method": "POST",
+                    "parameters": {
+                        "dynamic": {
+                            "recipients": [],
+                            "placeholders": []
+                        },
+                        "static": {
+                            "email": {
+                                "subject": "",
+                                "body": ""
+                            },
+                            "sms": {
+                                "body": "ok this is another notify!"
+                            },
+                            "message": {
+                                "subject": "",
+                                "body": ""
+                            },
+                            "recipients": []
+                        }
+                    },
+                    "webhookId": "1723f7aa49f073"
                 }
             ]
         }
