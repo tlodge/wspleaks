@@ -1,11 +1,11 @@
 {
-    "packageId": "283d055711098c",
+    "packageId": "236e010efc2314",
     "name": "leak",
     "description": "leak package",
     "buttons": [
         {
             "buttonId": "27c68d478d6d5e",
-            "name": "leak report",
+            "name": "report leak",
             "description": "leak reporting",
             "type": "action",
             "questions": [
@@ -433,6 +433,109 @@
                     "webhookId": "1723f7aa49f073"
                 }
             ]
+        },
+        {
+            "buttonId": "110ddc8272321e",
+            "name": "leak reports",
+            "description": "list of reported leaks",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "leak reports",
+                    "type": "datastoreitem",
+                    "values": {
+                        "storeId": "leakreport",
+                        "schema": [
+                            {
+                                "id": "d2c42daeddafd_pressed",
+                                "path": "d2c42daeddafd_pressed",
+                                "alias": "reported",
+                                "default": ""
+                            },
+                            {
+                                "id": "a5d8df5532fe9",
+                                "path": "a5d8df5532fe9",
+                                "alias": "apartment/communal",
+                                "default": ""
+                            },
+                            {
+                                "id": "b5866512fae7b8",
+                                "path": "b5866512fae7b8",
+                                "alias": "urgency",
+                                "default": ""
+                            },
+                            {
+                                "id": "1dd995685c31f4",
+                                "path": "1dd995685c31f4",
+                                "alias": "apartment",
+                                "default": "n/a"
+                            }
+                        ],
+                        "dschema": [
+                            {
+                                "id": "d2c42daeddafd_presser",
+                                "path": "d2c42daeddafd_presser",
+                                "alias": "reporter",
+                                "default": ""
+                            },
+                            {
+                                "id": "d2c42daeddafd_pressed",
+                                "path": "d2c42daeddafd_pressed",
+                                "alias": "reported",
+                                "default": ""
+                            },
+                            {
+                                "id": "a5d8df5532fe9",
+                                "path": "a5d8df5532fe9",
+                                "alias": "apartment/communal",
+                                "default": ""
+                            },
+                            {
+                                "id": "b5866512fae7b8",
+                                "path": "b5866512fae7b8",
+                                "alias": "urgency",
+                                "default": ""
+                            },
+                            {
+                                "id": "1dd995685c31f4",
+                                "path": "1dd995685c31f4",
+                                "alias": "apartment",
+                                "default": ""
+                            },
+                            {
+                                "id": "36e71ab3012458",
+                                "path": "36e71ab3012458",
+                                "alias": "details",
+                                "default": ""
+                            },
+                            {
+                                "id": "27bf441ed7aecc",
+                                "path": "27bf441ed7aecc",
+                                "alias": "contact",
+                                "default": ""
+                            }
+                        ],
+                        "filters": [],
+                        "limit": -1,
+                        "orderby": "pressed",
+                        "sortby": "asc"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "1bc93e9a7bd52c",
+                    "number": 1
+                }
+            ],
+            "navigation": {
+                "id": "1bc93e9a7bd52c",
+                "type": "node",
+                "parent": null,
+                "children": [],
+                "defaults": {
+                    "d2c42daeddafd": "1723f7aa49f073"
+                }
+            },
+            "webhooks": []
         }
     ]
 }
