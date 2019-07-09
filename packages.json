@@ -1,5 +1,5 @@
 {
-    "packageId": "3120339628d0d6",
+    "packageId": "9899a8a7337a3",
     "name": "leak",
     "description": "leak package",
     "buttons": [
@@ -19,7 +19,7 @@
                         ],
                         "multiple": "single",
                         "none": false,
-                        "description": "This button is used to log leak reports.  Details of leaks that are flagged as urgent will automatically be sent to maintenance and management"
+                        "description": "This button is used to log leak reports.  Details of leaks that are flagged as urgent will automatically be sent to maintenance and management."
                     },
                     "validators": [],
                     "compulsory": true,
@@ -37,7 +37,7 @@
                         ],
                         "multiple": "single",
                         "none": false,
-                        "description": "If the link is very urgent it means it is NOT under control and is causing damage.  If it is moderately urgent it is either not causing damage now, or is temporarily under control for the next few hours, not urgent means it can be kept under control for more than a few days"
+                        "description": "If the link is very urgent it means it is NOT under control and is causing damage.  If it is moderately urgent it is either not causing damage now, or is temporarily under control for the next few hours, not urgent means it can be kept under control for more than a few days."
                     },
                     "validators": [],
                     "compulsory": true,
