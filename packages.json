@@ -1,5 +1,5 @@
 {
-    "packageId": "9899a8a7337a3",
+    "packageId": "1b5bd5b93f8943",
     "name": "leak",
     "description": "leak package",
     "buttons": [
@@ -183,7 +183,18 @@
                                                 "rules": []
                                             }
                                         ],
-                                        "rules": []
+                                        "rules": [
+                                            {
+                                                "type": "question",
+                                                "id": "a5d8df5532fe9",
+                                                "value": {
+                                                    "type": "options",
+                                                    "values": [
+                                                        "communal area"
+                                                    ]
+                                                }
+                                            }
+                                        ]
                                     },
                                     {
                                         "id": "16aa65e81ee12f",
@@ -199,13 +210,34 @@
                                                 "rules": []
                                             }
                                         ],
-                                        "rules": []
+                                        "rules": [
+                                            {
+                                                "type": "question",
+                                                "id": "a5d8df5532fe9",
+                                                "value": {
+                                                    "values": [
+                                                        "an apartment"
+                                                    ]
+                                                }
+                                            }
+                                        ]
                                     }
                                 ],
                                 "rules": []
                             }
                         ],
-                        "rules": []
+                        "rules": [
+                            {
+                                "type": "question",
+                                "id": "a5d8df5532fe9",
+                                "value": {
+                                    "type": "options",
+                                    "values": [
+                                        "communal area"
+                                    ]
+                                }
+                            }
+                        ]
                     },
                     {
                         "id": "1dd995685c31f4",
@@ -221,7 +253,18 @@
                                 "rules": []
                             }
                         ],
-                        "rules": []
+                        "rules": [
+                            {
+                                "type": "question",
+                                "id": "a5d8df5532fe9",
+                                "value": {
+                                    "type": "options",
+                                    "values": [
+                                        "communal area"
+                                    ]
+                                }
+                            }
+                        ]
                     }
                 ],
                 "defaults": {
