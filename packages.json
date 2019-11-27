@@ -1,5 +1,5 @@
 {
-    "packageId": "1c123b9086f88d",
+    "packageId": "19f0aaacd26bbc",
     "name": "leak",
     "description": "leak package",
     "buttons": [
@@ -514,7 +514,7 @@
                         "limit": -1,
                         "orderby": "pressed",
                         "sortby": "asc",
-                        "description": "This is a list of all leak reports that have been made in Demo place."
+                        "description": "This is a list of all leak reports that have been made in Demo Place."
                     },
                     "validators": [],
                     "compulsory": true,
