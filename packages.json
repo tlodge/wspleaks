@@ -1,5 +1,5 @@
 {
-    "packageId": "db77aa6a78ad4",
+    "packageId": "167e50d68eae91",
     "name": "leak",
     "description": "leak package",
     "buttons": [
@@ -508,18 +508,13 @@
                                 "path": "36e71ab3012458",
                                 "alias": "details",
                                 "default": ""
-                            },
-                            {
-                                "id": "27bf441ed7aecc",
-                                "path": "27bf441ed7aecc",
-                                "alias": "contact",
-                                "default": ""
                             }
                         ],
                         "filters": [],
                         "limit": -1,
                         "orderby": "pressed",
-                        "sortby": "asc"
+                        "sortby": "asc",
+                        "description": "this is a list of all leak reports that have been made in the building"
                     },
                     "validators": [],
                     "compulsory": true,
